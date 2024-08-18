@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Page</title>
+    <style>
+        #nav    {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="nav">
+    <a href="index.html">Trang chủ</a>||<a href="add.html">Thêm mới</a>
+</div>
+<div id="divAdd">
+    <input placeholder="Nhập ID" id="id"> <br>
+    <input placeholder="Nhập tên sản phẩm" id="name"> <br>
+    <input placeholder="Nhập hình sản phẩm" id="image"> <br>
+    <input placeholder="Nhập hình nhỏ sản phẩm" id="subImage"> <br>
+    <input type="number" placeholder="Nhập giá bán" id="salePrice"> <br>
+    <input type="number" placeholder="Nhập giá thực" id="realPrice"> <br>
+    <input placeholder="Nhập release" id="release"><br>
+    <input type="number" placeholder="Nhập khuyến mãi" id="discount"><br>
+    <button onclick="addProduct()">Thêm</button>
+</div>
+<script src="Product.js"></script>
+<script src="Store.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
