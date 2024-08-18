@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <style>
+        th{
+            width: 120px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="nav" style="margin: 20px">
+    <a href="index.html">Trang chủ</a>||<a href="add.html">Thêm mới</a>
+</div>
+<h1>Quản trị nội dung</h1>
+<input type="text" name="" placeholder="Search here" id="search" oninput="searchByName()"><br>
+<input style="margin: 10px" type="number" placeholder="Enter Min Price" id="minPrice">
+<input style="margin: 10px" type="number" placeholder="Enter Max Price" id="maxPrice">
+<button onclick="searchByPrice()">Search by price</button>
+
+
+<div id="div" style="margin-bottom: 20px"></div>
+
+<table border="1px">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>subImage</th>
+        <th>salePrice</th>
+        <th>realPrice</th>
+        <th>Release</th>
+        <th>Discount</th>
+        <th colspan="2" style="width: 200px">Action</th>
+    </tr>
+    <tbody id="tbody">
+
+    </tbody>
+</table>
+
+<script src="Product.js"></script>
+<script src="Store.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
